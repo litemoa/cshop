@@ -1,0 +1,16 @@
+# 通貨の記号 / Currency symbol
+currency-symbol: '$'
+
+# 1人が作成できる最大数（OPを除く）。-1で無制限 / Shop limit per owner; -1 is unlimited
+max-shops-per-player: 30
+
+# ショップを使用できないワールド名 / Worlds where shops are disabled
+# 例: [lobby, shigen-jinko]
+# 大文字と小文字は区別しません。変更後はサーバーを再起動してください。
+disabled-worlds: []
+
+# ホログラムと展示アイテムを生成する距離（ブロック）。上下の距離も含みます。
+# 同じワールドでこの距離内に誰もいなければ両方を削除し、近づくと再表示します。
+# 約1秒ごとに判定。0で両方の表示を無効化。変更後はサーバーを再起動してください。
+# 既存のconfig.ymlでは、この項目を追加しなくても24が使われます。
+hologram-display-distance: 24

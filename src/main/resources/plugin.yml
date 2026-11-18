@@ -1,0 +1,29 @@
+name: cshop
+description: Chest shop with bilingual GUI and signs
+prefix: cshop
+version: '${version}'
+main: net.n1e.litemoa.cshop.Cshop
+api-version: '26.3'
+authors: [ Litemoa ]
+website: https://litemoa.n1e.net/
+depend: [ Vault ]
+
+commands:
+  chestshop:
+    description: Create a chest shop / チェストショップを作成
+    usage: /chestshop <販売価格> <買取価格>
+    aliases: [ cshop ]
+    permission: chestshop.create
+
+  admincshop:
+    description: Create an unlimited admin chest shop
+    usage: /admincshop <販売価格> <買取価格>
+    permission: chestshop.admin
+
+permissions:
+  chestshop.admin:
+    default: op
+  chestshop.use:
+    default: true
+  chestshop.create:
+    default: true
